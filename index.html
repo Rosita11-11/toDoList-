@@ -53,6 +53,31 @@
         await tambahStokOpname(elemenNamaBarang.value, elemenJumlahBarang.value, elemenSisaBarang.value);
          window.location.href = 'index.html';
       });
+     
+
+function deleteTask(index) {
+  
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <input type="text" id="taskInput" placeholder="Masukkan tugas baru...">
+        <button onclick="addTask()">Tambah Tugas</button>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
     </script>
 </body>
 
