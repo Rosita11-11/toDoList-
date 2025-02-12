@@ -47,7 +47,7 @@ export function formatAngka(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 }
 
-export async function tambahtoDoList(namabarang, jumlahbarang, sisabarang) {
+export async functiontambah 'toDoList'(namabarang, jumlahbarang, sisabarang) {
   try {
     const dokRef = await addDoc(collection(db, 'toDoList'), {
       namabarang:  namabarang,
