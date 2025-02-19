@@ -53,7 +53,17 @@
         await tambahStokOpname(elemenNamaBarang.value, elemenJumlahBarang.value, elemenSisaBarang.value);
          window.location.href = 'index.html';
       });
-     
+  <img src="loader.gif" style="width: 5em; display: block" id="loader">
+
+  <a href="form-data-stokopname.html">Tambah stok opname</a>
+
+  <script type="module">
+    import { ambilDaftarStokOpname, hapusstokopname, ubahstokopname } from './main.js';
+
+    $(document).ready(async function() {
+      let elemenDaftar = $("#daftar> tbody");
+      let daftarStokOpname = await ambilDaftarStokOpname();
+      let nomor = 1;
 
 function deleteTask(index) {
   
